@@ -50,6 +50,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
+`python main.py --debug` показывает переключатель Debug: команды CLI выполняются в видимом окне.
+
 ## Использование
 
 1. Проверьте, что значок в левом нижнем углу показывает **Windscribe CLI ready**. Если нет, щёлкните по нему и укажите путь к `windscribe-cli`.

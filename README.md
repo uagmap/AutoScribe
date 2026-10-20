@@ -50,6 +50,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
+`python main.py --debug` shows a Debug switch that runs CLI commands in a visible window.
+
 ## Usage
 
 1. Check that the badge at the bottom-left reads **Windscribe CLI ready**. If it doesn't, click it and set the path to `windscribe-cli`.
