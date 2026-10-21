@@ -803,8 +803,8 @@ class WindscribeWorker:
             self.log("Could not write windscribe_cli.conf", "FAILURE")
             return False
         # shortcut: the CLI reloads the conf from a file watcher and a routing change refetches the API
-        # session; 0.5 s is enough locally. Bump it if alternate-routing tests fail only on the first try.
-        self.stop_event.wait(0.5)
+        # session; Windscribe then waits for 1 second before loading the new conf, so we also need to wait for windscribe.
+        self.stop_event.wait(1.5)
         return True
 
     def apply_tweaks(self, awg, tls, routing):
